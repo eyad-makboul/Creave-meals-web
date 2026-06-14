@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"vite"
+    "build": "tailwindcss -i ./style.css -o ./dist/style.css && tsc",
+    "dev": "tailwindcss -i ./style.css -o ./dist/style.css --watch"
   },
   "devDependencies": {
     "@types/node": "^25.8.0",
