@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+vit.config.js
+vit.config.js.map
+vit.config.d.ts
+vit.config.d.ts.map
+

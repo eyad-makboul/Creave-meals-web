@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* @theme {
+  --variant-dark: selector(.dark), media(prefers-color-scheme: dark);
+} */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* @theme{
+    --variant-dark: .dark &;
+} */
+
+@layer base{
+    a{
+        @apply  cursor-pointer hover:text-fuchsia-500 transition-shadow transition-colors duration-400 hover:shadow-[0_20px_8px_-13px_#250f27]
+    }
+
+ 
+}
+
+@layer components{
+ .card{
+        @apply bg-gradient-to-r from-fuchsia-600/70 to-fuchsia-200 shadow-xl hover:shadow-[0_20px_60px_-10px_#804c83] transition-shadow duration-300 w-[20%] mt-4 mx-5 rounded-lg flex flex-col flex-wrap gap-3 items-center text-center
+    }
+ .img{
+        @apply w-full h-auto rounded-lg 
+
+ }
+}
+
+@layer utilities{
+
+}
